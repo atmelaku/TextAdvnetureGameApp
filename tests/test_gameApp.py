@@ -1,7 +1,9 @@
-from gameApp import app
+from gameApp import create_app
 
-def test_hello_world():
-    response = app.test_client().get('/')
+def test_config():
+    assert not create_app().testing
+    assert create_app({'TESTING': True}).testing
 
-    assert response.status_code == 200
-    assert response.data == b'Hello, World!'
+def test_index(client):
+    response = client.get('/')
+    assert response.data == b'hello, World!'

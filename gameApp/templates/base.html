@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block head %}{% endblock %}
+
+
+    {% block body %}
+
+    <div class="home">
+      <h2>Simple Math Game App</h2>
+      <p>click the button to start and Good Luck!</p>
+
+      <a href="{{ url_for('one')}}">start</a>
+    </div>
+    {% endblock %}

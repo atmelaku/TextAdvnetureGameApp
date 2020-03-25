@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
+
+{% block body %}
+<div class="home">
+  <h3>wellcome to part one simple addition math game</h3>
+  <form method="post">
+    <p>1. what is the sum of one and two?</p>
+    <label for="answer">answer</label>
+    <input type="number" name="answer1" required">
+
+    <p>2. what is the sum of six and two?</p>
+
+    <label for="answer">answer</label>
+    <input type="number" name="answer2" required">
+
+    <p>3. what is the sum of two and two?</p>
+
+    <label for="answer">answer</label>
+    <input type="number" name="answer3" required">
+
+    <p>4. what is the sum of five and two?</p>
+
+    <label for="answer">answer</label>
+    <input type="number" name="answer4" required">
+    <input type="submit" value="submit">
+  </form>
+  <div class="links">
+  <a href="{{ url_for('home')}}">homepage</a>
+  <a href="{{ url_for('one')}}">part1</a>
+  <a href="{{ url_for('two')}}">part2</a>
+  <a href="{{ url_for('three')}}">part3</a>
+  <a href="{{ url_for('four')}}">part4</a>
+</div>
+
+</div>
+{% endblock %}

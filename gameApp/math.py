@@ -18,7 +18,7 @@ def one():
         answer4 = request.form['answer4']
         if answer1 == "3" and answer2 == "8" and answer3 == "4" and answer4 == "7":
 
-            return "100%, nice Job!, try the next part" + render_template("part1.html")
+            return "100%, nice Job!, try the next level" + render_template("part1.html")
         elif answer1 == "3" and answer2 == "8" and answer3 == "4" and answer4 != "7":
             return "75%, good. you missed number 4, try agin." + render_template("part1.html")
         elif answer1 == "3" and answer2 == "8" and answer3 != "4" and answer4 != "7":
@@ -40,7 +40,7 @@ def two():
         answer4 = request.form['answer4']
         if answer1 == "1" and answer2 == "8" and answer3 == "-1" and answer4 == "-3":
 
-            return "100%, nice Job!, try the next part" + render_template("part1.html")
+            return "100%, nice Job!, try the next level" + render_template("part1.html")
         elif answer1 == "1" and answer2 == "8" and answer3 == "-1" and answer4 != "-3":
             return "75%, good. you missed number 4, try agin." + render_template("part1.html")
         elif answer1 == "1" and answer2 == "8" and answer3 != "-1" and answer4 != "-3":
@@ -60,7 +60,7 @@ def three():
         answer4 = request.form['answer4']
         if answer1 == "2" and answer2 == "30" and answer3 == "0" and answer4 == "-9":
 
-            return "100%, nice Job!, try the next part" + render_template("part1.html")
+            return "100%, nice Job!, try the next level" + render_template("part1.html")
         elif answer1 == "2" and answer2 == "30" and answer3 == "0" and answer4 != "-9":
             return "75%, good. you missed number 4, try agin." + render_template("part1.html")
         elif answer1 == "2" and answer2 == "30" and answer3 != "0" and answer4 != "-9":
@@ -80,7 +80,7 @@ def four():
         answer4 = request.form['answer4']
         if answer1 == "2" and answer2 == "0" and answer3 == "1" and answer4 == "4":
 
-            return "100%, nice Job!, try the next part" + render_template("part1.html")
+            return "100%, nice Job!, try the next level" + render_template("part1.html")
         elif answer1 == "2" and answer2 == "0" and answer3 == "1" and answer4 != "4":
             return "75%, good. you missed number 4, try agin." + render_template("part1.html")
         elif answer1 == "2" and answer2 == "0" and answer3 != "1" and answer4 != "4":

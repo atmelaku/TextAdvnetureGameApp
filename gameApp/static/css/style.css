@@ -1,3 +1,28 @@
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   border: 2px solid green;
+  width: 500px;
+  height: 400px;
+  margin-left: 400px;
+}
+
+div.links {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+a {
+  background: gray;
+  color: blue;
+  font-size: 20px;
+  font-family: monospace;
+}
+p {
+  color: green;
+}
+h2, h3 {
+  color: #0074D9;
 }

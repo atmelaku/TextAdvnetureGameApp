@@ -27,10 +27,10 @@ def one():
             return "25%, you missed number 2, 3, and 4, try again." + render_template("part1.html")
         elif answer1 != "3" and answer2 != "8" and answer3 != "4" and answer4 != "7":
             return "you got 0%. you missed all of them, try again." + render_template("part1.html")
-        return render_template('base.html')
 
+    else:
 
-    return render_template("part1.html")
+        return render_template("part1.html")
 @bp.route('/2', methods=("GET", "POST"))
 def two():
     if request.method == "POST":
@@ -49,8 +49,8 @@ def two():
             return "25%, you missed number 2, 3, and 4, try again." + render_template("part2.html")
         elif answer1 != "1" and answer2 != "8" and answer3 != "-1" and answer4 != "-3":
             return "you got 0%. you missed all of them, try again." + render_template("part2.html")
-
-    return render_template("part2.html")
+    else:
+        return render_template("part2.html")
 @bp.route('/3', methods=("GET", "POST"))
 def three():
     if request.method == "POST":
@@ -69,8 +69,8 @@ def three():
             return "25%, you missed number 2, 3, and 4, try again." + render_template("part3.html")
         elif answer1 != "2" and answer2 != "30" and answer3 != "0" and answer4 != "-9":
             return "you got 0%. you missed all of them, try again." + render_template("part3.html")
-
-    return render_template("part3.html")
+    else:
+        return render_template("part3.html")
 @bp.route('/4', methods=("GET", "POST"))
 def four():
     if request.method == "POST":
@@ -89,5 +89,5 @@ def four():
             return "25%, you missed number 2, 3, and 4, try again." + render_template("part4.html")
         elif answer1 != "2" and answer2 != "0" and answer3 != "1" and answer4 != "4":
             return "you got 0%. you missed all of them, try again." + render_template("part4.html")
-
-    return render_template("part4.html")
+    else:
+        return render_template("part4.html")
